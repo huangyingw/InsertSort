@@ -9,7 +9,7 @@ using namespace std;
 
 void main() 
 {
-    InsertSort<int>* insertSort=new InsertSort<int>(10);
+  InsertSort<int>* insertSort=new InsertSort<int>(10);
 	insertSort->data[0]=8;
 	insertSort->data[1]=2;
 	insertSort->data[2]=10;

@@ -1,19 +1,30 @@
+#include <fstream>
+using namespace std;
+
 template <class Type> class InsertSort
 {
-private:
-	int length;
+	private:
+		int length;
+		ofstream fout;
 
-public:
-	Type* data;
-	InsertSort<Type>(int len);
-	void Sort();
-	void Print();
+	public:
+		Type* data;
+		InsertSort<Type>(int len);
+		~InsertSort<Type>();
+		void Sort();
+		void Print();
 };
 
 template <class Type> InsertSort<Type>::InsertSort(int len)
 {
 	length=len;
 	data=new Type[length];
+	fout.open("output.txt");
+}
+
+template <class Type> InsertSort<Type>::~InsertSort()
+{
+	fout.close();
 }
 
 
@@ -33,7 +44,7 @@ template <class Type> void InsertSort<Type>::Sort()
 	for(int i=0;i<length-1;i++)	
 	{
 		j=i+1;
-		if(data[i]>data[j])//如果data[j]值较小，则在为其寻找合适的插入位置
+		if(data[i]>data[j])
 		{
 			left=0;
 			right=i;
