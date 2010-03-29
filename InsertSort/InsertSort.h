@@ -5,7 +5,7 @@ template <class Type> class InsertSort
 {
 	private:
 		int length;
-		ofstream fout;
+		ofstream fout; 
 
 	public:
 		Type* data;
