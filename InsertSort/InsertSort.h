@@ -39,12 +39,12 @@ template <class Type> void InsertSort<Type>::Print()
 
 template <class Type> void InsertSort<Type>::Sort()
 {
-	int k,j,left,right;
+	int i,j,k,left,right;
 	Type temp;
-	for(int i=0;i<length-1;i++)	
+	for(i=0;i<length-1;i++)	
 	{
 		j=i+1;
-		if(data[i]>data[j])//如果data[j]值较小，则在为其寻找合适的插入位置
+		if(data[i]>data[j])
 		{
 			left=0;
 			right=i;
