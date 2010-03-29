@@ -3,15 +3,15 @@ using namespace std;
 
 template <class Type> class InsertSort
 {
-private:
-	int length;
-	ofstream fout; 
+	private:
+		int length;
+		ofstream fout; 
 
-public:
-	Type* data;
-	InsertSort<Type>(int len);
-	void Sort();
-	void Print();
+	public:
+		Type* data;
+		InsertSort<Type>(int len);
+		void Sort();
+		void Print();
 };
 
 template <class Type> InsertSort<Type>::InsertSort(int len)
