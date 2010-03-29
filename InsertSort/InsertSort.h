@@ -1,7 +1,11 @@
+#include <fstream>
+using namespace std;
+
 template <class Type> class InsertSort
 {
 private:
 	int length;
+	ofstream fout; 
 
 public:
 	Type* data;
