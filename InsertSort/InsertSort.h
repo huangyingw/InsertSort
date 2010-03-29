@@ -10,6 +10,7 @@ template <class Type> class InsertSort
 	public:
 		Type* data;
 		InsertSort<Type>(int len);
+		~InsertSort<Type>();
 		void Sort();
 		void Print();
 };
@@ -18,6 +19,12 @@ template <class Type> InsertSort<Type>::InsertSort(int len)
 {
 	length=len;
 	data=new Type[length];
+	fout.open("output.txt");
+}
+
+template <class Type> InsertSort<Type>::~InsertSort()
+{
+	fout.close();
 }
 
 
