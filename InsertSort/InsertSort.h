@@ -39,16 +39,21 @@ template <class Type> void InsertSort<Type>::Print()
 
 template <class Type> void InsertSort<Type>::Sort()
 {
-	int k,j,left,right;
+	int i,j,k,left,right;
 	Type temp;
-	for(int i=0;i<length-1;i++)	
+	for(i=0;i<length-1;i++)	
 	{
 		j=i+1;
+		fout<<"i->"<<i<<",j->"<<j<<endl;
 		if(data[i]>data[j])
 		{
 			left=0;
 			right=i;
 			temp=data[j];
+			
+			for(int index=left;index<right+1;index++)
+				fout<<data[index]<<endl;
+			
 			while(left<right-1)
 			{
 				if(temp<data[(right+left)/2])
@@ -60,6 +65,7 @@ template <class Type> void InsertSort<Type>::Sort()
 					left=(right+left)/2;
 				}
 			}
+			fout<<"temp->"<<temp<<endl;
 			for(;j>left;j--)
 				data[j]=data[j-1];
 			if(temp>data[left])
