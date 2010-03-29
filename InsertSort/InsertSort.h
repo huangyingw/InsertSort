@@ -45,6 +45,7 @@ template <class Type> void InsertSort<Type>::Sort()
 	{
 		j=i+1;
 		fout<<"i->"<<i<<",j->"<<j<<endl;
+		fout<<"data[i]->"<<data[i]<<",data[j]->"<<data[j]<<endl;
 		if(data[i]>data[j])
 		{
 			left=0;

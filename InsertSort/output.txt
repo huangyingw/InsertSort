@@ -1,4 +1,5 @@
 i->0,j->1
+data[i]->8,data[j]->2
 From left->0 to right->0
 8,
 temp->2
@@ -6,10 +7,12 @@ i=0
 2,8,10,3,5,4,6,7,1,9,
 
 i->1,j->2
+data[i]->8,data[j]->10
 i=1
 8,10,3,5,4,6,7,1,9,
 
 i->2,j->3
+data[i]->10,data[j]->3
 From left->0 to right->2
 2,8,10,
 temp->3
@@ -17,6 +20,7 @@ i=2
 8,10,5,4,6,7,1,9,
 
 i->3,j->4
+data[i]->10,data[j]->5
 From left->0 to right->3
 2,3,8,10,
 temp->5
@@ -24,6 +28,7 @@ i=3
 8,10,4,6,7,1,9,
 
 i->4,j->5
+data[i]->10,data[j]->4
 From left->0 to right->4
 2,3,5,8,10,
 temp->4
@@ -31,6 +36,7 @@ i=4
 8,10,6,7,1,9,
 
 i->5,j->6
+data[i]->10,data[j]->6
 From left->0 to right->5
 2,3,4,5,8,10,
 temp->6
@@ -38,6 +44,7 @@ i=5
 8,10,7,1,9,
 
 i->6,j->7
+data[i]->10,data[j]->7
 From left->0 to right->6
 2,3,4,5,6,8,10,
 temp->7
@@ -45,6 +52,7 @@ i=6
 8,10,1,9,
 
 i->7,j->8
+data[i]->10,data[j]->1
 From left->0 to right->7
 2,3,4,5,6,7,8,10,
 temp->1
@@ -52,6 +60,7 @@ i=7
 8,10,9,
 
 i->8,j->9
+data[i]->10,data[j]->9
 From left->0 to right->8
 1,2,3,4,5,6,7,8,10,
 temp->9
