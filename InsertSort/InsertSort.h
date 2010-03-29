@@ -51,8 +51,10 @@ template <class Type> void InsertSort<Type>::Sort()
 			right=i;
 			temp=data[j];
 			
+			fout<<"From "<<left<<" to "<<right<<endl;
 			for(int index=left;index<right+1;index++)
-				fout<<data[index]<<endl;
+				fout<<data[index]<<",";
+			fout<<endl;
 			
 			while(left<right-1)
 			{
