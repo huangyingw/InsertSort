@@ -50,6 +50,10 @@ template <class Type> void InsertSort<Type>::Sort()
 			left=0;
 			right=i;
 			temp=data[j];
+			
+			for(int index=left;index<right+1;index++)
+				fout<<data[index]<<endl;
+			
 			while(left<right-1)
 			{
 				if(temp<data[(right+left)/2])
