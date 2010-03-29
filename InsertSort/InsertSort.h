@@ -32,9 +32,9 @@ template <class Type> void InsertSort<Type>::Print()
 {
 	for(int i=0;i<length;i++)
 	{
-		cout<<data[i]<<",";
+		fout<<data[i]<<",";
 	}
-	cout<<endl;
+	fout<<endl;
 }
 
 template <class Type> void InsertSort<Type>::Sort()
