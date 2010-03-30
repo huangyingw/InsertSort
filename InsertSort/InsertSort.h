@@ -57,6 +57,11 @@ template <class Type> void InsertSort<Type>::Sort()
 				fout<<data[index]<<",";
 			fout<<endl;
 			
+			fout<<"Current data"<<endl;
+			for(int index=0;index<length;index++)
+				fout<<data[index]<<",";
+			fout<<endl;
+			
 			while(left<right-1)
 			{
 				if(temp<data[(right+left)/2])
@@ -80,9 +85,7 @@ template <class Type> void InsertSort<Type>::Sort()
 				data[left]=temp;
 			}
 		}
-		fout<<"i="<<i<<endl;
-		for(int index=i;index<length;index++)
-				fout<<data[index]<<",";
-			fout<<endl<<endl;
+		fout<<endl;
 	}
+	
 }
