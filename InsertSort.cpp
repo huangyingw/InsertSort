@@ -1,11 +1,15 @@
+// InsertSort.cpp : 定义控制台应用程序的入口点。
+//
+
+#include "stdafx.h"
 #include<iostream>
 using namespace std;
 #include"InsertSort.h"
 
 
-int main() 
+void main() 
 {
-	InsertSort<int>* insertSort=new InsertSort<int>(10);
+    InsertSort<int>* insertSort=new InsertSort<int>(10);
 	insertSort->data[0]=8;
 	insertSort->data[1]=2;
 	insertSort->data[2]=10;
@@ -18,5 +22,4 @@ int main()
 	insertSort->data[9]=9;
 	insertSort->Sort();
 	insertSort->Print();
-	return 0;
 }
