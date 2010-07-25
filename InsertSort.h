@@ -33,7 +33,7 @@ template <class Type> void InsertSort<Type>::Sort()
 	for(int i=0;i<length-1;i++)	
 	{
 		j=i+1;
-		if(data[i]>data[j])//如果data[j]值较小，则在为其寻找合适的插入位置
+		if(data[i]>data[j])//if the data[j] is smaller, then, find appropriate place in the previous i datas for it.
 		{
 			left=0;
 			right=i;
