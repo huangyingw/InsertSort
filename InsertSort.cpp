@@ -3,7 +3,7 @@ using namespace std;
 #include"InsertSort.h"
 
 
-template <class Type>
+  template <class Type>
 InsertSort<Type>::InsertSort(int len)
 {
   length=len;
