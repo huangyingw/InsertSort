@@ -10,7 +10,8 @@ InsertSort<Type>::InsertSort(int len)
   data=new Type[length];
 }
 
-template <class Type> void InsertSort<Type>::Print()
+  template <class Type>
+void InsertSort<Type>::Print()
 {
   for(int i=0;i<length;i++)
   {
@@ -19,7 +20,8 @@ template <class Type> void InsertSort<Type>::Print()
   cout<<endl;
 }
 
-template <class Type> void InsertSort<Type>::Sort()
+  template <class Type>
+void InsertSort<Type>::Sort()
 {
   int k,j,left,right;
   Type temp;
@@ -55,6 +57,7 @@ template <class Type> void InsertSort<Type>::Sort()
     }
   }
 }
+
 int main() 
 {
   InsertSort<int>* insertSort=new InsertSort<int>(10);
