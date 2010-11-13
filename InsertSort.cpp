@@ -36,13 +36,9 @@ void InsertSort<Type>::Sort()
       while(left<right-1)
       {
         if(temp<data[(right+left)/2])
-        {
           right=(right+left)/2;
-        }
         else
-        {
           left=(right+left)/2;
-        }
       }
       for(;j>left;j--)
         data[j]=data[j-1];
