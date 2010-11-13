@@ -25,7 +25,7 @@ void InsertSort<Type>::Sort()
 {
   int k,j,left,right;
   Type temp;
-  for(int i=0;i<length-1;i++)	
+  for(int i=0;i<length-1;i++)
   {
     j=i+1;
     if(data[i]>data[j])//if the data[j] is smaller, then, find appropriate place in the previous i datas for it.
@@ -58,7 +58,7 @@ void InsertSort<Type>::Sort()
   }
 }
 
-int main() 
+int main()
 {
   InsertSort<int>* insertSort=new InsertSort<int>(10);
   insertSort->data[0]=8;
