@@ -47,13 +47,9 @@ void InsertSort<Type>::Sort()
       for(;j>left;j--)
         data[j]=data[j-1];
       if(temp>data[left])
-      {
         data[right]=temp;
-      }
       else
-      {
         data[left]=temp;
-      }
     }
   }
 }
