@@ -1,3 +1,3 @@
-OBJECTS = InsertSort.exe
+OBJECTS = insertSort.exe
 include ../../GNU_makefile_template
-LOCFLAGS = -I../InsertSort
+LOCFLAGS = -I../insertSort

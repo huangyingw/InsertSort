@@ -1,2 +1,2 @@
 make -B \
-&& ./InsertSort.exe
+&& ./insertSort.exe

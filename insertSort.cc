@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-#include"InsertSort.h"
+#include"insertSort.h"
 
 
   template <class Type>
